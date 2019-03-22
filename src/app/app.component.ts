@@ -1,5 +1,6 @@
-import { ContextService } from './context.service';
+
 import { Component, OnInit } from '@angular/core';
+import { StorageService } from './storage.service';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-
-  constructor(private context: ContextService) { }
+  constructor() { }
 
   ngOnInit() {
-   
+
   }
 }

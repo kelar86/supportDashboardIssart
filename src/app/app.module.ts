@@ -4,19 +4,21 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { MessageTableComponent } from './components/message-table/message-table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    MessageTableComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DragDropModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

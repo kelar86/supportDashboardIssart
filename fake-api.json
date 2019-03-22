@@ -1,7 +1,7 @@
 [
-    { "Summary":"Техническая проблема", "From": "Client", "email":"email@emai.ru", "Date":"2019-03-21"},
-    { "Summary":"Техническая проблема", "From": "Client", "email":"email@emai.ru", "Date":"2019-03-21"},
-    { "Summary":"Техническая проблема", "From": "Client", "email":"email@emai.ru", "Date":"2019-03-21"},
-    { "Summary":"Техническая проблема", "From": "Client", "email":"email@emai.ru", "Date":"2019-03-21"},
-    { "Summary":"Техническая проблема", "From": "Client", "email":"email@emai.ru", "Date":"2019-03-21"}
+    { "summary":"Техническая проблема", "email":"email@emai.ru", "date":"2019-03-21"},
+    { "summary":"Техническая проблема", "email":"email@emai.ru", "date":"2019-03-21"},
+    { "summary":"Техническая проблема", "email":"email@emai.ru", "date":"2019-03-21"},
+    { "summary":"Техническая проблема", "email":"email@emai.ru", "date":"2019-03-21"},
+    { "summary":"Техническая проблема", "email":"email@emai.ru", "date":"2019-03-21"}
 ]
