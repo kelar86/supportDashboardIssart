@@ -11,21 +11,23 @@ import { StorageService } from 'src/app/storage.service';
 
     <div class="panel">
     <h4>Incoming messages</h4>
-      <table>
-        <thead>
-          <th></th>
-        </thead>
-        <div
+        <mat-list role="list"
           cdkDropList
           #incomingTable="cdkDropList"
           [cdkDropListData]="incoming"
           [cdkDropListConnectedTo]="[supportTable, incomingTable, marketingTable, ceoTable]"
           class="message-list"
           (cdkDropListDropped)="drop($event)">
-          <div class="message-box" *ngFor="let item of incoming" cdkDrag> {{item.summary}} | {{item.email}} | {{item.date}}</div>
-      </div>
 
-      </table>
+          <mat-list-item class="message-box" *ngFor="let item of incoming" cdkDrag>
+            <span matLine> Summary: {{item.summary}} </span>
+              <span matLine> From: {{item.email}} </span>
+              <span matLine> Date: {{item.date | date:'dd-MM-yyyy'}}</span>
+
+          </mat-list-item>
+          </mat-list>
+
+
     </div>
 
     <div class="main">
@@ -100,6 +102,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   drop(event: CdkDragDrop<string[]>) {
+    console.log(event);
     if (event.previousContainer === event.container) {
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
     } else {

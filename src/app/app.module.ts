@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import { MatListModule } from '@angular/material';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    DragDropModule
+    DragDropModule,
+    MatListModule
 
   ],
   providers: [],
