@@ -1,16 +1,29 @@
 .main-container {
    display: grid;
-   grid-template-columns: 2fr 3fr;
-   grid-gap: 10px;
-}
+   margin: 0 10% 0 10%;
+   grid-template-columns: 2fr 3fr; 
+   grid-gap: 20px;
+   
+   grid-template-areas:
+    "header header"
+    "incoming support"
+    "incoming marketing"
+    "incoming ceo";
+  }
+  #header {
+    grid-area: header;
+    background-color: silver;
+    height: 60px;
+    padding-left: 1rem;
+  }
+  #incoming {
+    grid-area: incoming;
+  }
 
-.message-container {
-   width: 400px;
-   max-width: 100%;
-   margin: 0 25px 25px 0;
-   display: inline-block;
-   vertical-align: top;
- }
+  
+.mat-line {
+  margin-top: 5px;
+}
 
  .message-list {
    border: solid 1px #ccc;
