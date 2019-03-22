@@ -76,7 +76,6 @@ import { StorageService } from 'src/app/storage.service';
 })
 export class DashboardComponent implements OnInit, OnDestroy {
 
-  // inputData: Observable<Message[]>;
   subscribtions;
 
   incoming = [];
