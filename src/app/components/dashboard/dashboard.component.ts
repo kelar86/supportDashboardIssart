@@ -9,7 +9,7 @@ import { StorageService } from 'src/app/storage.service';
   template: `
     <div class="main-container">
     
-    <header id="header">
+    <header id="header" class="header">
       <h3>Support Dashboard</h3>
     </header>
     <div id="incoming" class="message-container">

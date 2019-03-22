@@ -12,18 +12,21 @@
   }
   #header {
     grid-area: header;
-    background-color: silver;
-    height: 60px;
-    padding-left: 1rem;
+   
   }
   #incoming {
     grid-area: incoming;
   }
+  .header {
+    background-color: #ccc;
+    height: 60px;
+    padding-left: 1rem;
+    border-radius: 0 0 5px 5px;
+  }
 
-  
-.mat-line {
-  margin-top: 5px;
-}
+  .mat-line {
+    margin-top: 5px;
+  }
 
  .message-list {
    border: solid 1px #ccc;
